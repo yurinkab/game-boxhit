@@ -59,7 +59,7 @@ shoot.play();
       laser.setAttribute("style","top:"+math4+"px;left:"+math2+"px;width:"+math1+"px;height:"+math3+"px;")
       s.appendChild(box);
 
-      if(localStorage.score < hitcount){
+      if(localStorage.score < hitcount || localStorage.score === 0){
         localStorage.setItem("score", hitcount);
         win.play();
         high.innerHTML = "Your New High Score Is: <span style='color:red'>" + localStorage.score + "</span>";
