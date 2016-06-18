@@ -1,0 +1,19 @@
+body {font-family: 'Montserrat', sans-serif;
+
+}
+#main {width:200px;height:200px;transition:all 1s; background-image:url("../box.jpg"); background-size: 100% 100%;}
+.laser {width:30px;  height:30px; position:absolute; display:block;
+  background-image:url("../bullet.png"); background-size: 100% 100%; background-size: 100% 100%;
+
+}
+
+.laserblood {width:30px;  height:30px; position:absolute; display:block;
+  background-image:url("../blood.gif"); background-size: 100% 100%; background-size: 100% 100%; z-index: 3;
+
+}
+.laser2 {width:10px;  height:10px; border-radius:50%; background:red; position:absolute; display:block;
+}
+.counter {margin-top:50px;}
+.counterHit {color:red;}
+.box {position:absolute; display:block; background-image:url("../mellon.png"); background-size: 100% 100%; z-index: 2; transition: all 1s;border:3px solid red;}
+.highscores {}
