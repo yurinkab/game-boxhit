@@ -3,7 +3,11 @@ var coun = 10;
 var count = document.querySelector(".counter");
 var hit =  document.querySelector('.counterHit');
 var high =  document.querySelector('.highscores');
+if (localStorage.score === 0 || localStorage.score === undefined) {
+
+} else {
 high.innerHTML = "Your High Score Is :" + localStorage.score;
+}
 shoot = new Audio("./shoot.wav");
 win = new Audio("./win.wav");
 loose = new Audio("./lose.wav");
@@ -59,7 +63,7 @@ shoot.play();
       laser.setAttribute("style","top:"+math4+"px;left:"+math2+"px;width:"+math1+"px;height:"+math3+"px;")
       s.appendChild(box);
 
-      if(localStorage.score < hitcount || localStorage.score === 0){
+      if(localStorage.score < hitcount || localStorage.score === 0 || localStorage.score === undefined){
         localStorage.setItem("score", hitcount);
         win.play();
         high.innerHTML = "Your New High Score Is: <span style='color:red'>" + localStorage.score + "</span>";
